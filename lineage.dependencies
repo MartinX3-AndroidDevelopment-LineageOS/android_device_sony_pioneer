@@ -1,0 +1,8 @@
+[
+  {
+    "remote":       "MartinX3-AndroidDevelopment-LineageOS",
+    "repository":   "android_device_sony_customization",
+    "target_path":  "device/sony/customization",
+    "branch":       "MartinX3/lineage-17.1"
+  }
+]

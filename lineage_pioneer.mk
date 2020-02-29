@@ -12,15 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_pioneer.mk \
-    $(LOCAL_DIR)/lineage_pioneer_DSDS.mk \
+# Inherit device parts
+$(call inherit-product, device/sony/pioneer/aosp_h3113.mk)
 
-COMMON_LUNCH_CHOICES += \
-    lineage_pioneer-eng \
-    lineage_pioneer-userdebug \
-    lineage_pioneer-user \
-    lineage_pioneer_DSDS-eng \
-    lineage_pioneer_DSDS-userdebug \
-    lineage_pioneer_DSDS-user \
+# Override Product Name
+PRODUCT_NAME := lineage_pioneer
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := pioneer
